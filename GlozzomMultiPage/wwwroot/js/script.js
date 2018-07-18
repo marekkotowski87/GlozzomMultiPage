@@ -7,6 +7,12 @@ $('.carousel').carousel({
     pause: 'hover'
 });
 
+//lightbox
+$(document).on('click', '[data-toggle="lightbox"]', function (event) {
+    event.preventDefault();
+    $(this).ekkoLightbox();
+});
+
 //video play
 $(function () {
     $(".video").click(function () {
@@ -19,3 +25,4 @@ $(function () {
         });
     });
 });
+
